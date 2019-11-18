@@ -11,4 +11,11 @@
         android:hint="请输入需要查询的单词"
         android:autofillHints=""
         android:inputType="" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="532dp">
+
+    </ListView>
 </LinearLayout>

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //c创建数据库
         dbHelper = new DatabaseHelper(this, "Land.db", null, 1);
         Button createDatabase = (Button) findViewById(R.id.create_database);
         createDatabase.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 dbHelper.getWritableDatabase();
             }
         });
+        //添加单词
         Button add = (Button) findViewById(R.id.add);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
