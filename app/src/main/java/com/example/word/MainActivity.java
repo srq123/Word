@@ -107,11 +107,12 @@ public class MainActivity extends AppCompatActivity {
 //                cursor.close();
 //            }
 //        });
+
         Button find = (Button)findViewById(R.id.find);
         find.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("com.example.word.ACTION_START");
+                Intent intent = new Intent(MainActivity.this,Find1.class);
                 startActivity(intent);
             }
         });
