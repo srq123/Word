@@ -11,14 +11,13 @@
 
     <Button
         android:id="@+id/add"
-        android:layout_width="102dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="增加" />
 
     <Button
         android:id="@+id/find"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="查询"
-        />
+        android:text="查询" />
 </LinearLayout>

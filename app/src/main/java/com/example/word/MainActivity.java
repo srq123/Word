@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                                 final EditText example = (EditText)layout.findViewById(R.id.example) ;
                                 values.put("example",example.getText().toString());
                                 db.insert("WordBook",null,values);
+                                Toast.makeText(MainActivity.this,"添加成功",Toast.LENGTH_LONG).show();
                             }
                         });
                         dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
